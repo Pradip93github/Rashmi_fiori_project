@@ -1,0 +1,13 @@
+specVersion: '3.0'
+metadata:
+  name: rashmi.sd.ord
+type: application
+server:
+  customMiddleware:
+  - name: fiori-tools-proxy
+    afterMiddleware: compression
+    configuration:
+     backend:
+     - path: /sap
+       url: http://rashmir4dsap.rashmigroup.com:8001/
+

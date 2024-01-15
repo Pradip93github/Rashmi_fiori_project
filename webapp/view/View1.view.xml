@@ -1,0 +1,42 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+          controllerName="rashmi.sd.ord.controller.View1">
+
+  <Page>
+  <customHeader>
+  <Toolbar >
+  <ToolbarSpacer ></ToolbarSpacer>
+  <Title text="View1 Loaded"></Title>
+  <ToolbarSpacer ></ToolbarSpacer>
+  <Button icon="sap-icon://action" type="Transparent" press="onCall" ></Button>
+  </Toolbar>
+  </customHeader>
+  
+  <SearchField id="idSrch" width="auto" liveChange="onSearch"></SearchField>
+
+     <!-- mode="Delete" -->
+  <List id="idList" items="{/ZPRODUCTSet}" itemPress="goToNextPage" mode="SingleSelectMaster"  delete="onDelete"
+  growing="true" growingThreshold="10">
+  
+  <items>
+
+   <ObjectListItem  title="{PRODUCT_ID}"
+                   number="{PRICE} {CURRENCY_CODE}" numberUnit="{WEIGHT_UNIT}" intro="{CATEGORY}"
+                    icon="sap-icon://add-product"
+                    
+                    type="Navigation" >
+   </ObjectListItem>
+  
+   </items>
+
+  </List>
+
+<footer>
+<Toolbar>
+<ToolbarSpacer ></ToolbarSpacer>
+<Button icon="sap-icon://add" press="onAdd" ></Button>
+
+</Toolbar>
+</footer>
+
+  </Page>
+</mvc:View>

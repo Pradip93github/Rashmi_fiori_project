@@ -1,0 +1,17 @@
+{
+  "name": "fiorilikeapp",
+  "version": "1.0.0",
+  "description": "fiori like app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/ux-ui5-tooling": "^1.12.1"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.8.0"
+  }
+}
