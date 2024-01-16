@@ -5,7 +5,7 @@
   <customHeader>
   <Toolbar >
   <ToolbarSpacer ></ToolbarSpacer>
-  <Title text="View1 Loaded"></Title>
+  <Title text="View1 Label changes by pradip"></Title>
   <ToolbarSpacer ></ToolbarSpacer>
   <Button icon="sap-icon://action" type="Transparent" press="onCall" ></Button>
   </Toolbar>
